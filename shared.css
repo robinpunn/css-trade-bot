@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 110px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.nav-links {
+    color:#6e0672;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px
+}
+
+/* .nav-links::after {
+    content:"(Link)";
+    color:red;
+} */
+
+.nav-links:hover, 
+.nav-links:active  {
+    color:white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: linear-gradient(to left,#4956dd, #86108a);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #e104e9;
+    background:white;
+    border: none
+}
+
+
+/* p::first-letter {
+    color:red;
+    font-size: 100px;
+} */
+
+.main-header {
+    background: linear-gradient(#9198e5, #db32e0);
+    position: fixed;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    z-index: 1;
+    top: 0;
+    left: 0
+}
+
+.main-header__brand {
+    color:#6e0672;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    height: 20px;
+}
+
+.main-header__brand img {
+    height: 20px;
+    margin-top: 8px;
+}
+
+.main-header__brand:hover {
+    color:#ffffff;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button_plan {
+    background: #e104e9;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #e104e9;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button_plan:hover,
+.button_plan:active {
+    background: white;
+    color: #e104e9;
+}
+
+.button_plan:focus {
+    outline: none;
+}
+
+
+
+.main-footer {
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+}
