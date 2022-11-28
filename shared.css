@@ -1,3 +1,4 @@
+/*Resets*/
 * {
     box-sizing: border-box;
 }
@@ -7,6 +8,7 @@ body {
     margin: 0;
 }
 
+/*Transparent backdrop*/
 .backdrop {
     position: fixed;
     display: none;
@@ -18,6 +20,7 @@ body {
     background: rgba(0,0,0,0.5);
 }
 
+/*Navbar*/
 .main-nav {
     display: inline-block;
     text-align: right;
@@ -96,6 +99,9 @@ body {
 .main-header__brand img {
     height: 20px;
     margin-top: 8px;
+}
+.main-header__brand img:hover {
+    transform:scale(1.2);
 }
 
 .main-header__brand:hover {

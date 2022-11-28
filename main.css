@@ -1,3 +1,4 @@
+/*Resets*/
 * {
     box-sizing: border-box;
 }
@@ -7,6 +8,7 @@
         margin: 0;
     }
 
+/*FIRST SECTION*/
 #intro {
     background: linear-gradient(to top, rgba(80,68,18,0.5) 10%, transparent),
     url("images/brain.jpeg") left 0% bottom 30%/cover no-repeat border-box;
@@ -23,6 +25,7 @@
     position:relative;
 }
 
+/*SECOND SECTION*/
 .section-title {
     color: #db32e0;
     text-align: center;
@@ -94,7 +97,7 @@
     padding: 8px 0; 
 }
 
-
+/*THIRD SECTION*/
 #key-features {
     background: linear-gradient(#db32e0 25%, #9198e5 75%);
     margin-top: 80px;

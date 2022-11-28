@@ -1,6 +1,4 @@
-/* Given Css */
-
-
+/* General */
 main {
     padding-top: 32px;
 }
@@ -14,6 +12,7 @@ main {
     z-index: -1;
 }
 
+/*content box styling*/
 .main-box {
     width: 80%;
     margin: 16px 0;
@@ -63,8 +62,10 @@ main {
     clear:both
 }
 
+
+/* content box color */
 #plus {
-    background: rgba(201, 12, 201, 0.75);
+    background: rgba(201, 12, 201, 0.95);
     margin-top: 32px;
 }
 
@@ -82,7 +83,7 @@ main {
 }
 
 #premium {
-    background: rgba(121, 6, 121, 0.75);
+    background: rgba(121, 6, 121, 0.85);
 }
 
 .package__title {

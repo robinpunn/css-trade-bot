@@ -1,3 +1,4 @@
+/*Customer Container*/
 .testimonial {
     font-size: 20px;
     margin: 48px 0;
@@ -12,6 +13,7 @@
     margin-top: 96px;
   }
 
+/*IMAGE*/
   .testimonial__image-container {
     width: 65%;
     max-width: 715px;
