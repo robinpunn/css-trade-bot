@@ -11,7 +11,7 @@
 /*FIRST SECTION*/
 #intro {
     background: linear-gradient(to top, rgba(80,68,18,0.5) 10%, transparent),
-    url("images/brain.jpeg") left 0% bottom 30%/cover no-repeat border-box;
+    url("images/brain.jpeg") left 0% bottom 48%/cover no-repeat border-box;
     /* background: linear-gradient(#db32e0, #9198e5); */ 
     /* background-position: left 10% bottom 20%;
     background-repeat: no-repeat;
@@ -19,9 +19,10 @@
     /* background-origin: border-box; */
     /* background-image: linear-gradient(-30deg, purple, pink, transparent); */
     /* background-image: radial-gradient(ellipse at 20% 50%,white, purple); */
-    height: 600px;
-    padding: 10px;
-    margin-top: 40px;
+    width: 100%;
+    height: 45vh;
+    padding: 0.625rem;
+    margin-top: 2.5rem;
     position:relative;
 }
 
@@ -49,8 +50,8 @@
     background: #acb1e9;
     display: inline-block;
     text-align: center;
-    padding: 16px;
-    margin: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
     width:30%;
     vertical-align: middle;
 }
@@ -64,7 +65,7 @@
 .plan__annotation {
     background: white;
     color: #db32e0;
-    padding: 8px;
+    padding: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
     border-radius: 8px;
 }
@@ -94,19 +95,19 @@
 }
 
 .plan__features li {
-    padding: 8px 0; 
+    padding: 0.5rem 0;
 }
 
 /*THIRD SECTION*/
 #key-features {
     background: linear-gradient(#db32e0 25%, #9198e5 75%);
-    margin-top: 80px;
-    padding:16px
+    margin-top: 5rem;
+    padding: 1rem;
 }
 
 #key-features .section-title {
     color:white;
-    margin: 32px;    
+    margin: 2rem;
 }
 
 .key-features__list {
@@ -129,14 +130,14 @@
     border: 2px solid #6e0672;
     border-radius: 50%;
     margin: auto;
-    padding: 20px;
+    padding: 1.75rem;
 }
 
 .key-feature__text {
     text-align: center;
     font-weight: bold;
     color: #6e0672;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* .key-features__list > li {
