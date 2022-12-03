@@ -184,7 +184,7 @@
     border-color: #7881e6;
 }
 
-.modal__action--negative:hover;
+.modal__action--negative:hover,
 .modal__action--negative:active {
     background: #9198e5;
     border-color: #9198e5;
