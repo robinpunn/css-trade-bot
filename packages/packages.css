@@ -94,3 +94,23 @@ main {
     color: #bbb;
 }
 
+/*Media Queries*/
+@media (min-width:40rem) {
+    main {
+      margin: 3rem auto;
+      max-width: 94rem;
+    }
+}
+
+@media (min-width:1500px) {
+    .main-box {
+        border-left: 4px solid rgb(65,0,65);
+    }
+    #free {
+        border-right: 4px solid rgb(65, 0, 65);
+    }
+    #free:hover,
+    #free:active {
+        border-right-color: #ffffff;
+    }
+}
