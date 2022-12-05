@@ -1,0 +1,19 @@
+/*General*/
+main {
+    padding-top: 1rem;
+}
+
+/*Title*/
+.signup-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #dd0de4;
+}
+
+/*Main content*/
+.signup-form label,
+.signup-form input,
+.signup-form select {
+    display: block;
+    margin-top: 1rem;
+}
