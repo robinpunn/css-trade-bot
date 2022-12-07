@@ -163,24 +163,24 @@ main {
 }
 
 /*Navbar button*/
-.button_plan {
+.button {
     background: #e104e9;
     color: white;
     font: inherit;
     border: 1.5px solid #e104e9;
-    padding: 0.25rem;
-    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.button_plan:hover,
-.button_plan:active {
-    background: white;
-    color: #e104e9;
+.button:hover,
+.button:active {
+    color: #ffffff;
+    background: #6e0672;
 }
 
-.button_plan:focus {
+.button:focus {
     outline: none;
 }
 

@@ -106,7 +106,7 @@
 }
 
 /*SECTION 2 MEDIA QUERIES*/
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
     .plans {
     width: 100%;
     text-align: center;
@@ -116,12 +116,14 @@
         display: inline-block;
         width: 30%;
         vertical-align: middle;
-        min-width: 10rem;
-        max-width: 20rem;
+        min-width: 13rem;
+        max-width: 25rem;
+        min-height: 23rem;
     }
 
     .plan--highlighted {
         box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+        min-height: 25rem;
     }
 }
 

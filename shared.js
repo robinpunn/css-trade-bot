@@ -1,6 +1,6 @@
 const backdrop = document.querySelector('.backdrop');
 const modal = document.querySelector('.modal');
-const selectPlanButton = document.querySelectorAll('.button_plan');
+const selectPlanButton = document.querySelectorAll('.plan button');
 const negative = document.querySelector('.modal__action--negative');
 const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
