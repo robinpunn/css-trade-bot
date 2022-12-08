@@ -46,7 +46,7 @@ main {
 .signup-form select:focus {
     outline: none;
     border-color: #6e0672;
-    background: #dd0de4;
+    background: #f954ff;
     color: white;
 }
 
@@ -76,6 +76,14 @@ main {
 .signup-form button[type="submit"] {
     display: block;
     margin-top: 1rem;
+}
+
+/*disabled button*/
+.button[disabled] {
+    cursor: not-allowed;
+    border: rgb(88, 87, 87);
+    background: #ccc;
+    color:rgb(88, 87, 87);
 }
 
 /*Media Queries*/

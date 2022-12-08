@@ -45,17 +45,18 @@ main {
     background: linear-gradient(to right,#4956dd, #86108a);
     padding: 0.5rem;
 }
-
+/*subtitle*/
 .package__subtitle {
     color: #000000;
 }
-
+/*content box/subtext*/
 .para-box {
     padding: 1rem;
     border: 1px solid rgb(0, 0, 255);
-    font-size: 1.25rem;
     color: rgb(128, 0, 128);
     background: rgba(255, 255, 255, 0.5);
+          /*style weight size family*/
+    font: italic 700 1.25rem "AnonymousPro", sans-serif;
 }
 
 .clearfix {
