@@ -9,9 +9,19 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    display: grid;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    height: 100%;
 }
 
 /*Transparent backdrop*/
@@ -22,13 +32,12 @@ body {
     left: 0;
     z-index: 100;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: rgba(0,0,0,0.5);
 }
 
 main {
-    min-height: calc(100vh - 3.7rem - 8rem);
-    margin-top: 3.5rem;
+    grid-area: main;
 }
 
 /*Navbar*/
@@ -215,8 +224,10 @@ main {
 /*Footer*/
 .main-footer {
     background: black;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 2rem 0.5rem;
+    margin-top: 2rem;
+    grid-row: 3/4;
+    /* margin-top: 3rem; */
 }
 
 .main-footer__links {
