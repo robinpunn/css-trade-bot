@@ -220,13 +220,12 @@ main {
     }
 }
 
-
 /*Footer*/
 .main-footer {
     background: black;
     padding: 2rem 0.5rem;
     margin-top: 2rem;
-    grid-row: 3/4;
+    grid-area: footer;
     /* margin-top: 3rem; */
 }
 
