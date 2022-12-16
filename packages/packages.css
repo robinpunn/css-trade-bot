@@ -26,7 +26,7 @@ main {
 .main-box:active {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     border-color: #ffffff;
-    /* border-color: #ff5454 !important */
+    animation: moveUp 1s forwards;
 }
 
 .main-box a {
@@ -118,5 +118,20 @@ main {
     #free:hover,
     #free:active {
         border-right-color: #ffffff;
+    }
+}
+
+/*animations*/
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        transform: translateY(-1.5rem);
     }
 }
