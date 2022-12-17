@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 /*Customer Container*/
 main {
     padding-top: 2.5rem;

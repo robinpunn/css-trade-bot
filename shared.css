@@ -4,6 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
 
+/*Variables*/
+:root {
+    --bg-1: linear-gradient(#9198e5, #db32e0);
+    --cta: linear-gradient(to left,#4956dd, #86108a);
+    --dark-purp: #6e0672;
+    --hover-white: #ffffff;
+    --light-purp: #e104e9;
+    --grey: #ccc;
+    --black: #000;
+}
+
 /*Resets*/
 * {
     box-sizing: border-box;
@@ -16,12 +27,19 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    display: grid;
-    grid-template-rows: 3.5rem auto fit-content(8rem);
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-    height: 100%;
+    padding-top: 3.5rem;
+}
+
+@supports (display: grid) {
+    body {
+        display: grid;
+        grid-template-rows: 3.5rem auto fit-content(8rem);
+        grid-template-areas: "header"
+                             "main"
+                             "footer";
+        padding-top: 0;
+        height: 100%;
+    }
 }
 
 /*Transparent backdrop*/
@@ -45,7 +63,7 @@ main {
 
 /*Navbar*/
 .main-header {
-    background: linear-gradient(#9198e5, #db32e0);
+    background: var(--bg-1);
     position: fixed;
     width: 100%;
     padding: 0.5rem 1rem;
@@ -54,6 +72,9 @@ main {
     top: 0;
     left: 0;
     height: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,7 +82,7 @@ main {
 
 /*Navbar logo*/
 .main-header__brand {
-    color:#6e0672;
+    color: var(--dark-purp);
     text-decoration: none;
     font-weight: bold;
 }
@@ -75,7 +96,7 @@ main {
 }
 
 .main-header__brand:hover {
-    color:#ffffff;
+    color: var(--hover-white);
 }
 
 /* toggle button */
@@ -96,7 +117,7 @@ main {
 .toggle-button__bar {
     width: 100%;
     height: 0.2rem;
-    background: black;
+    background: var(--black);
     display: block;
     margin: 0.6rem 0;
 }
@@ -110,6 +131,9 @@ main {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
 }
 
@@ -119,7 +143,7 @@ main {
 
 .nav-links,
 .mobile-nav__item a {
-    color:#6e0672;
+    color: var(--dark-purp);
     text-decoration: none;
     font-weight: bold;
     padding: 0.2rem 0;
@@ -127,8 +151,8 @@ main {
 
 .nav-links:hover, 
 .nav-links:active  {
-    color:white;
-    border-bottom: 5px solid white;
+    color: var(--hover-white);
+    border-bottom: 5px solid var(--hover-white);
 }
 
 .main-nav__item--cta {
@@ -137,7 +161,7 @@ main {
 
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
-    color: white;
+    color: var(--hover-white);
     background: linear-gradient(to left,#4956dd, #86108a);
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
@@ -147,17 +171,17 @@ main {
 .main-nav__item--cta a:active,
 .mobile-nav__items--cta a:hover,
 .mobile-nav__items--cta a:active {
-    color: #e104e9;
-    background:white;
+    color: var(--light-purp);
+    background: var(--hover-white);
     border: none
 }
 
 /*Navbar button*/
 .button {
-    background: #e104e9;
-    color: white;
+    background: var(--light-purp);
+    color: var(--hover-white);
     font: inherit;
-    border: 1.5px solid #e104e9;
+    border: 1.5px solid var(--light-purp);
     padding: 0.5rem;
     border-radius: 8px;
     font-weight: bold;
@@ -166,8 +190,9 @@ main {
 
 .button:hover,
 .button:active {
-    color: #ffffff;
-    background: #6e0672;
+    color: var(--hover-white);
+    background: var(--dark-purp);
+    border-color: var(--dark-purp);
 }
 
 .button:focus {
@@ -181,13 +206,16 @@ main {
     z-index: 101;
     top: 0;
     left: 0;
-    background: white;
+    background: var(--hover-white);
     width: 80%;
     height: 100vh;
     transition: transform 500ms ease-out;
 }
 
 .mobile-nav__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,6 +247,9 @@ main {
         display: none;
     }
     .main-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
     }
     .main-header {
@@ -232,17 +263,19 @@ main {
 
 /*Footer*/
 .main-footer {
-    background: black;
+    background: var(--black);
     padding: 2rem 0.5rem;
     margin-top: 2rem;
     grid-area: footer;
-    /* margin-top: 3rem; */
 }
 
 .main-footer__links {
     list-style: none;
     margin:0;
     padding:0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,13 +286,13 @@ main {
 }
 
 .main-footer__link a {
-    color: white;
+    color: var(--hover-white);
     text-decoration: none;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-    color: #ccc;
+    color: var(--grey);
 }
 
 /*Footer media queries*/
