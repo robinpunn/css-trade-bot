@@ -1,3 +1,18 @@
+/*Variables*/
+:root {
+    --bg-1: linear-gradient(#9198e5, #db32e0);
+    --bg-1-rev: linear-gradient(#db32e0, #9198e5);
+    --cta: linear-gradient(to left,#4956dd, #86108a);
+    --dark-purp: #6e0672;
+    --hover-white: #ffffff;
+    --light-purp: #e104e9;
+    --grey-blue: #9198e5;
+    --light-blue: #4956dd;
+    --grey: #ccc;
+    --black: #000;
+    --faded-grey-green:  rgba(32, 65, 32,0.55);
+}
+
 /*Resets*/
 * {
     box-sizing: border-box;
@@ -12,13 +27,6 @@
 #intro {
     background: linear-gradient(to top, rgba(80,68,18,0.5) 10%, transparent),
     url("images/brain.jpeg") center/cover no-repeat border-box;
-    /* background: linear-gradient(#db32e0, #9198e5); */ 
-    /* background-position: left 10% bottom 20%;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* background-origin: border-box; */
-    /* background-image: linear-gradient(-30deg, purple, pink, transparent); */
-    /* background-image: radial-gradient(ellipse at 20% 50%,white, purple); */
     width: 100%;
     height: 35vh;
     padding: 0.625rem;
@@ -26,7 +34,7 @@
 }
 
 #intro h1 {
-    color: #6e0672;
+    color: var(--dark-purp);
     font-family: 'Anton', sans-serif;
     position: absolute;
     bottom: 5%;
@@ -53,12 +61,12 @@
 
 /*SECOND SECTION*/
 .section-title {
-    color: #db32e0;
+    color: var(--light-purp);
     text-align: center;
 }
 
 .plan {
-    background: #acb1e9;
+    background: var(--grey-blue);
     text-align: center;
     padding: 1rem;
     margin: 0.5rem 0;
@@ -66,32 +74,32 @@
 }
 
 .plan--highlighted {
-    background: #7881e6;
+    background: var(--light-blue);
     color: white;
 }
 
 .plan__annotation {
     background: white;
-    color: #db32e0;
+    color: var(--light-purp);
     padding: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
     border-radius: 8px;
 }
 
 .plan__title {
-    color: #dd0de4;
+    color: var(--light-purp);
 }
 
 .plan__price {
-    color: rgba(32, 65, 32,0.55);
+    color: var(--grey);
 }
 
 .plan--highlighted .plan__price {
-    color: rgba(32, 65, 32,0.75)
+    color: var(--grey);
 }
 
 .plan--highlighted .plan__title {
-    color: white
+    color: var(--hover-white);
 }
 
 .plan__features {
@@ -138,13 +146,13 @@
 
 /*THIRD SECTION*/
 #key-features {
-    background: linear-gradient(#db32e0 25%, #9198e5 75%);
+    background: var(--bg-1-rev);
     margin-top: 5rem;
     padding: 1rem;
 }
 
 #key-features .section-title {
-    color:white;
+    color:var(--hover-white);
     margin: 2rem;
 }
 
@@ -160,10 +168,10 @@
 }
 
 .key-feature__image {
-    background: #ffcede;
+    background: var(--hover-white);
     width: 128px;
     height: 128px;
-    border: 2px solid #6e0672;
+    border: 2px solid var(--dark-purp);
     border-radius: 50%;
     margin: auto;
     padding: 1.75rem;
@@ -172,7 +180,7 @@
 .key-feature__text {
     text-align: center;
     font-weight: bold;
-    color: #6e0672;
+    color: var(--dark-purp);
     font-size: 1.25rem;
 }
 
@@ -199,9 +207,9 @@
     top: 20%;
     left: 30%;
     width: 40%;
-    background: white;
+    background: var(--hover-white);
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--grey);
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
@@ -215,8 +223,8 @@
 }
 
 .modal__action {
-    border: 1px solid #dd0de4;
-    background: #dd0de4;
+    border: 1px solid var(--light-purp);
+    background: var(--light-purp);
     text-decoration: none;
     color: white;
     font: inherit;
@@ -226,17 +234,17 @@
 
 .modal__action:hover,
 .modal__action:active {
-    background: #6e0672;
-    border-color: #6e0672;
+    background: var(--dark-purp);
+    border-color: var(--dark-purp);
 }
 
 .modal__action--negative {
-    background: #7881e6;
-    border-color: #7881e6;
+    background: var(--light-blue);
+    border-color: var(--light-blue);
 }
 
 .modal__action--negative:hover,
 .modal__action--negative:active {
-    background: #9198e5;
-    border-color: #9198e5;
+    background: var(--grey-blue);
+    border-color: var(--grey-blue);
 }
